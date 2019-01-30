@@ -1,4 +1,4 @@
-# @idio/mailru
+# <img src="https://raw.github.com/idiocc/mailru/master/docs/mailru.svg?sanitize=true" align="left"> @idio/mailru
 
 %NPM: @idio/mailru%
 
