@@ -10,16 +10,15 @@ import mailru from '@idio/mailru'
 
 ```## mailru
 [
-  ["arg1", "string"],
-  ["arg2?", "boolean"]
+  ["router", "Router"],
+  ["config", "Config"]
 ]
 ```
 
-Call this function to get the result you want.
+Sets up the router to accept the `auth/mailru` and `auth/mailru/redirect` routes. Protects against man-in-the-middle attacks using a unique code for each session. Gets user details upon successful login.
 
 %TYPEDEF types/index.xml%
 
 %EXAMPLE: example/example.js, ../src => @idio/mailru%
-%FORK example example/example%
 
 %~%

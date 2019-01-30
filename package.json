@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "Mail.Ru OAuth Routes.",
   "main": "build",
+  "module": "src/index.js",
   "scripts": {
     "t": "zoroaster -a",
     "test": "yarn t test/spec test/mask",
@@ -11,7 +12,7 @@
     "test-build": "ALAMODE_ENV=test-build yarn test",
     "lint": "eslint .",
     "doc": "NODE_DEBUG=doc doc documentary -o README.md",
-    "b": "alamode src -o build",
+    "b": "alamode src -o build -s",
     "d": "yarn-s d1",
     "d1": "NODE_DEBUG=doc doc src/index.js -g",
     "build": "yarn-s d b doc",
@@ -20,7 +21,8 @@
     "example/": "yarn e example/example.js"
   },
   "files": [
-    "build"
+    "build",
+    "src"
   ],
   "repository": {
     "type": "git",
@@ -28,6 +30,8 @@
   },
   "keywords": [
     "mailru",
+    "mail.ru",
+    "oauth",
     "idio"
   ],
   "author": "Anton <anton@adc.sh>",
@@ -37,10 +41,15 @@
   },
   "homepage": "https://github.com/idiocc/mailru#readme",
   "devDependencies": {
-    "alamode": "1.6.1",
-    "documentary": "1.20.1",
+    "@demimonde/dotenv": "1.0.0",
+    "@idio/core": "1.2.0",
+    "alamode": "1.7.1",
+    "documentary": "1.21.1",
     "eslint-config-artdeco": "1.0.1",
     "yarn-s": "1.1.0",
     "zoroaster": "3.6.6"
+  },
+  "dependencies": {
+    "rqt": "3.0.4"
   }
 }

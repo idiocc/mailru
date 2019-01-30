@@ -2,7 +2,7 @@
 
 %NPM: @idio/mailru%
 
-`@idio/mailru` is Mail.Ru OAuth Routes.
+`@idio/mailru` is Mail.Ru OAuth Routes For Idio Web Server.
 
 ```sh
 yarn add -E @idio/mailru
